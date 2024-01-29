@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'trello'
 
 # Set up Trello API credentials

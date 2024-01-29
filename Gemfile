@@ -2,9 +2,6 @@
 
 source 'https://rubygems.org'
 
-group :development do
-  gem 'byebug', platform: :mri
-  gem 'rubocop'
-end
-
+gem 'byebug', platform: :mri
+gem 'rubocop'
 gem 'ruby-trello'
