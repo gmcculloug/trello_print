@@ -1,8 +1,17 @@
 # frozen_string_literal: true
 
+# Usage: ruby trello_print.rb [column_name]
+# Description: Print titles of cards for each column (list) on the Trello board
+#
+# Environment variables:
+#   - TRELLO_DEVELOPER_PUBLIC_KEY: Trello developer public key
+#   - TRELLO_MEMBER_TOKEN: Trello member token
+#   - TRELLO_BOARD_ID: Trello board ID
+#   - column_name: Optional column name to filter lists by
+
 require 'trello'
 
-# SidePiece board ID
+# Set up Trello board ID
 BOARD_ID = ENV['TRELLO_BOARD_ID']
 ALL_LISTS = '__ALL__'
 
